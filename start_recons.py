@@ -34,7 +34,7 @@ domains = ["lyst.com",
 "scan.me"]
 
 def run(d):
-	os.system("/home/rjp/Documents/Tools/start_recon.sh "+d)
+	os.system("/home/YOUR_USER/Documents/Tools/start_recon.sh "+d)
 
 for domain in domains:
 	if domain is not "":
