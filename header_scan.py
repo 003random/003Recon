@@ -7,7 +7,7 @@ print("\n-- Testing for sensitive info in headers on domains in "+input_file+" w
 
 is_closed = True
 domains = open(input_file,'r').read().split('\n')
-headers = [line.rstrip('\n').lower() for line in open('/home/rjp/Documents/Wordlists/headers.txt')]
+headers = [line.rstrip('\n').lower() for line in open('/home/YOUR_USER/Documents/Wordlists/headers.txt')]
 
 for domain in domains:
 	if domain != "":
