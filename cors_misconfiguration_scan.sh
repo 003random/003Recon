@@ -23,3 +23,4 @@ else
 fi
 
 printf "\n -- Done -- \n"
+#Credits to Tomnomnom for the help :)
