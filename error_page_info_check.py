@@ -7,7 +7,7 @@ output_file = sys.argv[2]
 is_closed = True
 
 domains = open(input_file,'r').read().split('\n')
-info = [line.rstrip('\n').lower() for line in open('/home/rjp/Documents/Wordlists/error_pages_info.txt')]
+info = [line.rstrip('\n').lower() for line in open('/home/YOUR_USER/Documents/Wordlists/error_pages_info.txt')]
 
 print("\n-- Checking for sensitive info in error pages "+input_file+" with output file, "+output_file+" --")
 
