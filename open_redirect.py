@@ -9,7 +9,7 @@ def start():
 
     is_closed = True
 
-    payloads = open("/home/rjp/Documents/Wordlists/redirects.txt",'r').read().split('\n')
+    payloads = open("/home/YOUR_USER/Documents/Wordlists/redirects.txt",'r').read().split('\n')
 
     #First loop trough the payloads to prevent 429 (rate limit)
     for payload in payloads: 
