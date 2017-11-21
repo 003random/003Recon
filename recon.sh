@@ -1,4 +1,4 @@
-    home_dir="/home/003random/Tools/recon" # Change to your own directory!
+    home_dir=$(pwd)
 
     output_dir="output"
     tools_dir="tools"
