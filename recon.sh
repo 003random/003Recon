@@ -7,7 +7,7 @@
     screenshots_dir="$output_dir/$@/screenshots"  
 
     [ -d $output_dir ] || mkdir $output_dir;
-    [ -d $dependencies_dir ] || mkdir $dependencies_dir; git clone https://github.com/aboul3la/Sublist3r.git $dependencies_dir/sublister; git clone https://github.com/wpscanteam/wpscan.git $dependencies_dir/wpscan; git clone https://github.com/jobertabma/relative-url-extractor.git $dependencies_dir/relative-url-extractor; git clone https://github.com/maaaaz/webscreenshot.git $dependencies_dir/webscreenshot;
+    [ -d $dependencies_dir ] || mkdir $dependencies_dir; git clone https://github.com/aboul3la/Sublist3r.git $dependencies_dir/sublister; git clone https://github.com/wpscanteam/wpscan.git $dependencies_dir/wpscan; git clone https://github.com/jobertabma/relative-url-extractor.git $dependencies_dir/relative-url-extractor; git clone https://github.com/maaaaz/webscreenshot.git $dependencies_dir/webscreenshot; chmod -R 777 $home_dir/$tools_dir; 
 
 
 
@@ -27,8 +27,7 @@
     crlf_payload_file="$payloads_dir/crlf.txt"
     error_pages_payload_file="$payloads_dir/error_pages.txt"
     headers_payload_file="$payloads_dir/sensitive_headers.txt"
-    open_redirect_payload_file="$payloads_dir/sensitive_headers.txt"
-
+    open_redirect_payload_file="$payloads_dir/open_redirects.txt"
     
     wpscan_location="dependencies/wpscan"
     url_extractor_location="dependencies/relative-url-extractor"
