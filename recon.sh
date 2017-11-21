@@ -1,10 +1,15 @@
-    home_dir="/home/rjp/Desktop/recon"
+    home_dir="/home/003random/Tools/recon" # Change to your own directory!
 
     output_dir="output"
     tools_dir="tools"
     payloads_dir="payloads"
     dependencies_dir="dependencies"  
     screenshots_dir="$output_dir/$@/screenshots"  
+
+    [ -d $output_dir ] || mkdir $output_dir;
+    [ -d $dependencies_dir ] || mkdir $dependencies_dir; git clone https://github.com/aboul3la/Sublist3r.git $dependencies_dir/sublister; git clone https://github.com/wpscanteam/wpscan.git $dependencies_dir/wpscan; git clone https://github.com/jobertabma/relative-url-extractor.git $dependencies_dir/relative-url-extractor; git clone https://github.com/maaaaz/webscreenshot.git $dependencies_dir/webscreenshot;
+
+
 
     all_domains_file="$output_dir/$@/domains-all.txt"
     domains_file="$output_dir/$@/domains.txt"
@@ -27,7 +32,7 @@
     
     wpscan_location="dependencies/wpscan"
     url_extractor_location="dependencies/relative-url-extractor"
-    sublister_location="dependencies/Sublist3r"
+    sublister_location="dependencies/sublister"
     webscreenshot_location="dependencies/webscreenshot"
 
     cd $home_dir/$output_dir;
@@ -39,9 +44,9 @@
 
     python $sublister_location/sublist3r.py -o $all_domains_file -d $@;
     python $tools_dir/online.py $all_domains_file $domains_file;
-    #$tools_dir/crlf.sh $domains_file $crlf_file $crlf_payload_file;
-    #$tools_dir/cors_misconfiguration_scan.sh $domains_file $cors_file;
-    #python $tools_dir/open_redirect.py $domains_file $open_redirects_file $open_redirect_payload_file;
+    $tools_dir/crlf.sh $domains_file $crlf_file $crlf_payload_file;
+    $tools_dir/cors_misconfiguration_scan.sh $domains_file $cors_file;
+    python $tools_dir/open_redirect.py $domains_file $open_redirects_file $open_redirect_payload_file;
     python $tools_dir/header_scan.py $domains_file $headers_file $headers_payload_file;
     python $tools_dir/error_page_info_check.py $domains_file $error_page_info_file $error_pages_payload_file;
     python $tools_dir/subdomain_takeover_scan.py $domains_file $subdomain_take_over_file;
