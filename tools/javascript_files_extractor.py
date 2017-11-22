@@ -68,5 +68,6 @@ for domain in domains:
 
 
 file.close()
+domains.close()
 
 print("\n-- Done --")
