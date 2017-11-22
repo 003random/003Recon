@@ -20,7 +20,7 @@ for domain in domains:
 
 		for header in headers:
 			current_header = r.headers.get(header.lower())
-			if current_header != None:
+			if current_header != None and "nginx" not in current_header.lower():
 				headers_found.append(str(current_header))
 		if headers_found != []:
 			if is_closed:
