@@ -7,7 +7,8 @@ output_file = sys.argv[2]
 
 print("\n-- Extracting javascript files from domains in "+input_file+" with output file, "+output_file+" --\n")
 
-domains = open(input_file,'r').read().split('\n')
+domains_file = open(input_file,'r')
+domains = domains_file.read().split('\n')
 
 file = open(output_file,"w+")
 
@@ -68,6 +69,6 @@ for domain in domains:
 
 
 file.close()
-domains.close()
+domains_file.close()
 
 print("\n-- Done --")
