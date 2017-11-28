@@ -12,3 +12,6 @@ chmod 777 install.sh;
 #And then call it with:  
 
 ./recon.sh example.com  
+  
+# 
+*Created by [H1 - 003random](http://hackerone.com/003random) - [@003random](https://twitter.com/rub003)*
