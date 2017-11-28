@@ -29,6 +29,8 @@
     url_extractor_location="dependencies/relative-url-extractor"
     sublister_location="dependencies/sublister"
     webscreenshot_location="dependencies/webscreenshot"
+    nmap_location="dependencies/nmap"
+
 
     cd $home_dir/$output_dir;
     rm -rf $@; 
@@ -51,6 +53,6 @@
     python $tools_dir/wordpress_check.py $domains_file $wordpress_file;
     $wpscan_location/wpscan.rb --update;
     $tools_dir/wpscan_domains.sh $wordpress_file;
-    $tools_dir/nmap_scan.sh $domains_file $nmap_scan_file;
+    $tools_dir/nmap_scan.sh $domains_file $nmap_scan_file $nmap_location;
     
     printf "\n -- $@ Finished -- \n"
