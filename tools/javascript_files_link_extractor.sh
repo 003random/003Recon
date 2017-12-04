@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#This tool uses https://github.com/jobertabma/relative-url-extractor. So credits to Jobert for the extractor tool. The tool is used on line 17.
 printf "\n-- Extracting links out of javascript files in $1 with output file, $2  --\n"
 
 if [ ! -f $1 ]; then
