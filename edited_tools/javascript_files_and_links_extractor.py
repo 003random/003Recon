@@ -1,4 +1,6 @@
 #!/usr/bin/python
+#This is an edit of /tools/javascript_files_extractor.py and /tools/javascript_files_link_extractor.sh
+#it combines those 2 and takes 1 domain as string as argument 1. not a domain file
 
 import re, requests, sys, os
 
