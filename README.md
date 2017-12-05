@@ -1,4 +1,4 @@
-## Description
+## Description 📌
 
 This repository contains some of my scripts that i created to automate some recon processes.  
 It performs the following things;  
@@ -31,4 +31,4 @@ chmod 777 install.sh;
 ./recon.sh example.com  
     
 # 
-*Created by [003random](http://hackerone.com/003random) - [@003random](https://twitter.com/rub003) - [003random.com](https://poc-server.com/blog/)*
+*Created by [003random](http://hackerone.com/003random) - [@003random](https://twitter.com/rub003) - [003random.com](https://poc-server.com/blog/)* 👌
