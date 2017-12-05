@@ -1,3 +1,4 @@
+    #This little script chains all the tools together. please read it through before using, so there wont be any unexpected results.
     home_dir=$(pwd)
 
     output_dir="output"
@@ -33,7 +34,6 @@
 
 
     cd $home_dir/$output_dir;
-    rm -rf $@; 
     mkdir $@; 
     cd ../
 
