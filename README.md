@@ -5,10 +5,10 @@ It performs the following things;
 1. Get subdomains of a domain    
 2. Filter out only online domains    
 3. Scan the domains for CRLF    
-4. Check for a CORS misconfiguration  
+4. Check for a CORS misconfigurations  
 5. Test for open redirects  
 6. Grab sensitive headers  
-7. Get senstive info from error pages  
+7. Get sensitive info from error pages  
 8. Check for subdomain takeovers  
 9. Extract javascript files  
 10. Feed the javascript files into 'relative-url-extractor'  
