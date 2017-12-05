@@ -1,4 +1,5 @@
 #!/bin/bash
+#This script uses wpscan that is installed in the dependencies folder
 
 printf "\n-- Starting a wpscan for the domains in $1 --\n\n"
 
