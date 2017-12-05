@@ -25,7 +25,6 @@ In this folder it will create files with the discovered content.
 ### Install:  
 git clone https://github.com/003random/003Recon.git;  
 cd 003Recon;  
-chmod 777 install.sh;  
 ./install.sh;  #Or if you have some tools already installed, edit the paths in recon.sh and comment those tools out here.  
 
 #And then call it with:  
