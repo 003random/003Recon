@@ -17,7 +17,7 @@ It performs the following things;
 13. Start a wpscan on the wordpress sites  
 14. Do a nmap service scan  
 
-All out will get saved in a folder named by the domain, in the output folder.   
+All output will get saved in a folder named by the domain, in the output folder.   
 In this folder it will create files with the discovered content.  
 
 ### Install:  
