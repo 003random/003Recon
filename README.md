@@ -31,7 +31,7 @@ This tools does the following things;
 14. Do a nmap service scan  
 
 All out will get saved in a folder named by the domain, in the output folder.   
-In here it will create files with the discovered content.  
+In this folder it will create files with the discovered content.  
   
 # 
 *Created by [003random](http://hackerone.com/003random) - [@003random](https://twitter.com/rub003) - [003random.com](https://poc-server.com/blog/)*
