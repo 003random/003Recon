@@ -1,4 +1,7 @@
     #This little script chains all the tools together. please read it through before using, so there wont be any unexpected results.
+    tput setaf 3;
+    echo "Please read throug this script before executing, to prevent unexpected things from happening."
+    
     home_dir=$(pwd)
 
     output_dir="output"
@@ -34,6 +37,8 @@
 
 
     cd $home_dir/$output_dir;
+    # Uncomment on own risk. this will first clean the old results.
+    #rm -rf $@;
     mkdir $@; 
     cd ../
 
