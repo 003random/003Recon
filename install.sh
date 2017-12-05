@@ -14,5 +14,3 @@
     make;
     make install;
     cd ../../;
-    chmod -R 777 $home_dir/$tools_dir; 
-
