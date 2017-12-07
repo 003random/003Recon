@@ -1,6 +1,6 @@
-    home_dir=$(pwd)
-
     dependencies_dir="dependencies"  
+    dependencies_dir="output"  
+
 
     mkdir $output_dir;
     mkdir $dependencies_dir; 
