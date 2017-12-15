@@ -22,15 +22,16 @@ More tools in comming soon / in progress  :wink:
 All output will get saved in a folder named by the domain, in the output folder.   
 In this folder it will create files with the discovered content.  
 
-### Install:  
-git clone https://github.com/003random/003Recon.git;  
-cd 003Recon;  
-./install.sh;  #Or if you have some tools already installed, edit the paths in recon.sh and comment those tools out here.  
+## Install:  
 
-#And then call it with:  
+    git clone https://github.com/003random/003Recon.git;  
+    cd 003Recon;  
+    ./install.sh;  #Or if you have some tools already installed, edit the paths in recon.sh and comment those tools out here.  
 
-./recon.sh example.com  
+And then call it with:
+
+    ./recon.sh example.com  
   
-#Also, you might need to install some python modules like 'requests'. 
-# 
+### Also, you might need to install some python modules like 'requests'.
+
 👌 *Created by [003random](http://hackerone.com/003random) - [@003random](https://twitter.com/rub003) - [003random.com](https://poc-server.com/blog/)* 
