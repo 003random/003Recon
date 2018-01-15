@@ -33,7 +33,7 @@ for domain in domains:
 
 		matches = re.findall(regex, r, re.MULTILINE)
 		if matches == []:
-			regex = r"script src='(.*?)'"
+			regex = r'<script.*src=[\'|"](.*)[\'|"]'
 			matches = re.findall(regex, r, re.MULTILINE)
 
 		for m in matches:
