@@ -32,9 +32,6 @@ for domain in domains:
 			print "[-]Error in http://"+domain
 
 		matches = re.findall(regex, r, re.MULTILINE)
-		if matches == []:
-			regex = r'<script.*src=[\'|"](.*)[\'|"]'
-			matches = re.findall(regex, r, re.MULTILINE)
 
 		for m in matches:
 			if domain_written != True:
