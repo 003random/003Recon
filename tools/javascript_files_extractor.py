@@ -25,16 +25,13 @@ for domain in domains:
 	if domain != "":
 		matches = ""
 		r = ""
-		regex = r'script src="(.*?)"'
+		regex = r'<script.*src=[\'|"](.*)[\'|"]'
 		try:
 			r = requests.get("http://"+domain).content
 		except:
 			print "[-]Error in http://"+domain
 
 		matches = re.findall(regex, r, re.MULTILINE)
-		if matches == []:
-			regex = r"script src='(.*?)'"
-			matches = re.findall(regex, r, re.MULTILINE)
 
 		for m in matches:
 			if domain_written != True:
