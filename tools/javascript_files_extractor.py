@@ -25,7 +25,7 @@ for domain in domains:
 	if domain != "":
 		matches = ""
 		r = ""
-		regex = r'<script.*src=[\'|"](.*)[\'|"]'
+		regex = r'<script.*src=[\'|"]([^\'"]*)[\'|"]'
 		try:
 			r = requests.get("http://"+domain).content
 		except:
