@@ -1,6 +1,6 @@
     #This little script chains all the tools together. please read it through before using, so there wont be any unexpected results.
     tput setaf 3;
-    echo "Please read throug this script before executing, to prevent unexpected things from happening."
+    echo "Please read through this script before executing, to prevent unexpected things from happening."
     
     home_dir=$(pwd)
 
